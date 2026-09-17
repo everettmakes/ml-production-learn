@@ -10,7 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:3000", "ml-production-learn.vercel.app"],
     allow_methods=["POST"],
     allow_headers=["*"],
 )
